@@ -23,6 +23,10 @@ h1 {
   display: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .textInput,
 .textInput::placeholder,
 .textInput:focus-visible {
