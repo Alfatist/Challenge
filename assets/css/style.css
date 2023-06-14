@@ -43,6 +43,7 @@ h1 {
 
 .textInput[contenteditable]:empty::before {
   content: "Digite seu texto";
+  cursor: text;
 }
 
 .warning {
