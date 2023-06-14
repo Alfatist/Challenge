@@ -1,0 +1,45 @@
+body {
+  background-color: #4e3a76;
+  color: #ffffff;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.textInput,
+.textInput::placeholder,
+.textInput:focus-visible {
+  color: #ffffff;
+}
+
+.warning {
+  color: #ffffff;
+}
+
+.warning img {
+  filter: invert(1);
+}
+
+.btnPrimary {
+  background: #ffffff;
+  color: #5a427f;
+}
+
+.btnSecundary {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.resultBox {
+  background: #5a427f;
+  box-shadow: 0px 24px 32px -8px rgba(255, 255, 255, 0.08);
+}
+
+#result:empty::before {
+  color: #ffffff;
+}
+
+#result:empty::after {
+  color: #ffffff;
+}
