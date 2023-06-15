@@ -127,3 +127,69 @@ img {
   color: #495057;
   text-align: center;
 }
+
+/* Seletor de tema */
+
+.theme_selector {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  transition: all 200ms ease;
+}
+
+.theme_selector:hover {
+  transform: translate(0%, -50%) !important;
+}
+
+body:has(.sensor_selector:hover) .theme_selector {
+  transform: translate(0%, -50%) !important;
+}
+
+.shortcut-text {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 0.8em;
+}
+
+.theme-circle {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: block;
+  appearance: none;
+}
+
+.theme-circle:checked {
+  box-shadow: 0 0 5px 2px #007bff;
+}
+
+.theme-circle.purple-mode {
+  background-color: #9134b8;
+}
+
+.theme-circle.dark-mode {
+  background-color: #2b2b2b;
+}
+
+.theme-circle.blue-mode {
+  background-color: #2196df;
+}
+
+.theme-circle.light-mode {
+  background-color: #fbfbfb;
+}
+
+.sensor_selector {
+  position: fixed;
+  width: 15px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}

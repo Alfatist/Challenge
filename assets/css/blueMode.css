@@ -1,45 +1,45 @@
-body {
+body:has(.blue-mode:checked) {
   background-color: #0065a4;
   color: #ffffff;
 }
 
-h1 {
+body:has(.blue-mode:checked) h1 {
   color: #ffffff;
 }
 
-.textInput,
-.textInput::placeholder,
-.textInput:focus-visible {
+body:has(.blue-mode:checked) .textInput,
+body:has(.blue-mode:checked) .textInput::placeholder,
+body:has(.blue-mode:checked) .textInput:focus-visible {
   color: #ffffff;
 }
 
-.warning {
+body:has(.blue-mode:checked) .warning {
   color: #ffffff;
 }
 
-.warning img {
+body:has(.blue-mode:checked) .warning img {
   filter: invert(1);
 }
 
-.btnPrimary {
+body:has(.blue-mode:checked) .btnPrimary {
   background: #ffffff;
   color: #0065a4;
 }
 
-.btnSecundary {
+body:has(.blue-mode:checked) .btnSecundary {
   border-color: #ffffff;
   color: #ffffff;
 }
 
-.resultBox {
-  background: #004f7d;
+body:has(.blue-mode:checked) .resultBox {
+  background: #13557e;
   box-shadow: 0px 24px 32px -8px rgba(255, 255, 255, 0.08);
 }
 
-#result:empty::before {
+body:has(.blue-mode:checked) #result:empty::before {
   color: #ffffff;
 }
 
-#result:empty::after {
+body:has(.blue-mode:checked) #result:empty::after {
   color: #ffffff;
 }

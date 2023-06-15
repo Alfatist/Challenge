@@ -7,10 +7,23 @@
     <meta name="description" content="A simple and minimalist text-decoder" />
     <title>Decodificador</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/purpleMode.css" />
     <link rel="stylesheet" href="./assets/css/blueMode.css" />
+    <link rel="stylesheet" href="./assets/css/darkMode.css" />
   </head>
   <body>
     <header>
+      <div class="theme_selector" aria-disabled="true" aria-hidden="true">
+        <div class="shortcut-text bye">
+          <p>ctrl +</p>
+          alt gr
+        </div>
+        <input type="radio" name="color" class="theme-circle light-mode" tabindex="-1" checked />
+        <input type="radio" name="color" class="theme-circle blue-mode" tabindex="-1" />
+        <input type="radio" name="color" class="theme-circle dark-mode" tabindex="-1" />
+        <input type="radio" name="color" class="theme-circle purple-mode" tabindex="-1" />
+      </div>
+      <div class="sensor_selector" onmouseover="showSelector()" onmouseout="hideSelector()" aria-disabled="true" aria-hidden="true"></div>
       <img src="./assets/img/Alura Logo.svg" alt="Logo Alura" />
       <h1>Decodificador</h1>
     </header>

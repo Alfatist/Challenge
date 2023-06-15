@@ -1,45 +1,45 @@
-body {
+body:has(.purple-mode:checked) {
   background-color: #4e3a76;
   color: #ffffff;
 }
 
-h1 {
+body:has(.purple-mode:checked) h1 {
   color: #ffffff;
 }
 
-.textInput,
-.textInput::placeholder,
-.textInput:focus-visible {
+body:has(.purple-mode:checked) .textInput,
+body:has(.purple-mode:checked) .textInput::placeholder,
+body:has(.purple-mode:checked) .textInput:focus-visible {
   color: #ffffff;
 }
 
-.warning {
+body:has(.purple-mode:checked) .warning {
   color: #ffffff;
 }
 
-.warning img {
+body:has(.purple-mode:checked) .warning img {
   filter: invert(1);
 }
 
-.btnPrimary {
+body:has(.purple-mode:checked) .btnPrimary {
   background: #ffffff;
   color: #5a427f;
 }
 
-.btnSecundary {
+body:has(.purple-mode:checked) .btnSecundary {
   border-color: #ffffff;
   color: #ffffff;
 }
 
-.resultBox {
+body:has(.purple-mode:checked) .resultBox {
   background: #5a427f;
   box-shadow: 0px 24px 32px -8px rgba(255, 255, 255, 0.08);
 }
 
-#result:empty::before {
+body:has(.purple-mode:checked) #result:empty::before {
   color: #ffffff;
 }
 
-#result:empty::after {
+body:has(.purple-mode:checked) #result:empty::after {
   color: #ffffff;
 }
