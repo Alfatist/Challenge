@@ -1,5 +1,5 @@
 body:has(.blue-mode:checked) {
-  background-color: #0065a4;
+  background-color: #05304b;
   color: #ffffff !important;
 }
 
@@ -23,7 +23,7 @@ body:has(.blue-mode:checked) .warning img {
 
 body:has(.blue-mode:checked) .btnPrimary {
   background: #ffffff;
-  color: #0065a4;
+  color: #05304b;
 }
 
 body:has(.blue-mode:checked) .btnSecundary {
@@ -46,4 +46,8 @@ body:has(.blue-mode:checked) #result:empty::before {
 
 body:has(.blue-mode:checked) #result:empty::after {
   color: #ffffff;
+}
+
+body:has(.blue-mode:checked) a {
+  color: #f5b5d8;
 }

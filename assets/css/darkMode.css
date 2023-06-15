@@ -43,3 +43,7 @@ body:has(.dark-mode:checked) #result:empty::before {
 body:has(.dark-mode:checked) #result:empty::after {
   color: #ffffff;
 }
+
+body:has(.dark-mode:checked) a {
+  color: #f5b5d8;
+}

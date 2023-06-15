@@ -16,13 +16,15 @@
     <header>
       <div class="theme_selector" aria-disabled="true" aria-hidden="true">
         <div class="shortcut-text bye">
-          <p>ctrl +</p>
-          alt gr
+          <em
+            ><p>ctrl +</p>
+            alt gr</em
+          >
         </div>
         <input type="radio" name="color" class="theme-circle light-mode" tabindex="-1" />
-        <input type="radio" name="color" class="theme-circle blue-mode" tabindex="-1" checked />
+        <input type="radio" name="color" class="theme-circle purple-mode" tabindex="-1" checked />
         <input type="radio" name="color" class="theme-circle dark-mode" tabindex="-1" />
-        <input type="radio" name="color" class="theme-circle purple-mode" tabindex="-1" />
+        <input type="radio" name="color" class="theme-circle blue-mode" tabindex="-1" />
       </div>
       <div class="sensor_selector" onmouseover="showSelector()" onmouseout="hideSelector()" aria-disabled="true" aria-hidden="true"></div>
       <img src="./assets/img/Alura Logo.svg" alt="Logo Alura" />
@@ -32,17 +34,18 @@
       <span class="textInput" role="textbox" id="texto" aria-label="O input para inserir o texto que será criptografado" contenteditable></span>
       <span class="warning"><img src="./assets/img/Informação.svg" alt="ícone de aviso" /><small>Apenas letras minúsculas e sem acento</small></span>
       <div class="criptoButtons">
-        <button class="btnPrimary" onclick="encrypt()">Criptografar</button>
-        <button class="btnSecundary" onclick="decrypt()">Descriptografar</button>
+        <button type="button" class="btnPrimary" onclick="encrypt()">Criptografar</button>
+        <button type="button" class="btnSecundary" onclick="decrypt()">Descriptografar</button>
       </div>
     </main>
     <footer>
       <section class="resultBox">
         <img src="./assets/img/High quality products 1 1.svg" alt="Imagem de um homem usando uma lupa" aria-hidden="true" />
         <div id="result"></div>
-        <button class="btnSecundary" onclick="copyResult()">Copiar</button>
+        <button type="button" class="btnSecundary" onclick="copyResult()">Copiar</button>
       </section>
     </footer>
+    <p>© Created by <a href="https://github.com/Alfatist/Text-decoder">Alfatist</a></p>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
