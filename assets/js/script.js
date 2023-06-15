@@ -14,5 +14,9 @@ function hideSelector() {
   theme_selector.style.transform = "translate(100%, -50%)";
 }
 
+function encrypt() {}
+function decrypt() {}
+function copyResult() {}
+
 showSelector();
 setTimeout(hideSelector, 2000);

@@ -1,6 +1,6 @@
 body:has(.blue-mode:checked) {
   background-color: #0065a4;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 body:has(.blue-mode:checked) h1 {
@@ -34,6 +34,10 @@ body:has(.blue-mode:checked) .btnSecundary {
 body:has(.blue-mode:checked) .resultBox {
   background: #13557e;
   box-shadow: 0px 24px 32px -8px rgba(255, 255, 255, 0.08);
+}
+
+body:has(.blue-mode:checked) #result {
+  color: inherit;
 }
 
 body:has(.blue-mode:checked) #result:empty::before {

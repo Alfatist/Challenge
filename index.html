@@ -7,10 +7,10 @@
     <meta name="description" content="A simple and minimalist text-decoder" />
     <title>Decodificador</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/mediaQueries.css" />
     <link rel="stylesheet" href="./assets/css/purpleMode.css" />
     <link rel="stylesheet" href="./assets/css/blueMode.css" />
     <link rel="stylesheet" href="./assets/css/darkMode.css" />
-    <link rel="stylesheet" href="./assets/css/mediaQueries.css" />
   </head>
   <body>
     <header>
@@ -19,8 +19,8 @@
           <p>ctrl +</p>
           alt gr
         </div>
-        <input type="radio" name="color" class="theme-circle light-mode" tabindex="-1" checked />
-        <input type="radio" name="color" class="theme-circle blue-mode" tabindex="-1" />
+        <input type="radio" name="color" class="theme-circle light-mode" tabindex="-1" />
+        <input type="radio" name="color" class="theme-circle blue-mode" tabindex="-1" checked />
         <input type="radio" name="color" class="theme-circle dark-mode" tabindex="-1" />
         <input type="radio" name="color" class="theme-circle purple-mode" tabindex="-1" />
       </div>
@@ -32,14 +32,15 @@
       <span class="textInput" role="textbox" id="texto" aria-label="O input para inserir o texto que será criptografado" contenteditable></span>
       <span class="warning"><img src="./assets/img/Informação.svg" alt="ícone de aviso" /><small>Apenas letras minúsculas e sem acento</small></span>
       <div class="criptoButtons">
-        <button class="btnPrimary">Criptografar</button>
-        <button class="btnSecundary">Descriptografar</button>
+        <button class="btnPrimary" onclick="encrypt()">Criptografar</button>
+        <button class="btnSecundary" onclick="decrypt()">Descriptografar</button>
       </div>
     </main>
     <footer>
       <section class="resultBox">
         <img src="./assets/img/High quality products 1 1.svg" alt="Imagem de um homem usando uma lupa" aria-hidden="true" />
         <div id="result"></div>
+        <button class="btnSecundary" onclick="copyResult()">Copiar</button>
       </section>
     </footer>
     <script src="assets/js/script.js"></script>

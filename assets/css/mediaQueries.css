@@ -47,6 +47,10 @@
     display: flex;
   }
 
+  .resultBox {
+    width: 484px;
+  }
+
   .resultBox:has(#result:empty) > img {
     display: block;
   }
