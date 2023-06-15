@@ -12,14 +12,6 @@ body {
   background-color: #f5f5f5;
 }
 
-header {
-  width: 100%;
-  min-height: 96px;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
 h1 {
   display: none;
 }
@@ -29,8 +21,8 @@ button {
 }
 
 img {
-  width: auto;
-  height: auto;
+  width: min-content;
+  height: min-content;
 }
 
 .textInput,
@@ -69,7 +61,7 @@ img {
   align-items: flex-start;
   padding: 0px;
   gap: 24px;
-  margin-bottom: 64px;
+  margin-bottom: 7vh;
 }
 
 .btnPrimary {
@@ -110,6 +102,10 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.resultBox:has(#result:empty) > img {
+  display: none;
 }
 
 #result:empty::before {
